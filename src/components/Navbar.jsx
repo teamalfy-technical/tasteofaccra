@@ -36,7 +36,12 @@ const Navbar = () => {
                     } text-[16px] sm:text-[18px] cursor-pointer hover:underline hover-underline`}
                   onClick={() => SetActive(link.title)}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <a onClick={() => {
+                    const sectionElement = document.getElementById(link.id);
+                    if (sectionElement) {
+                        sectionElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }} href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
             </ul>
