@@ -61,7 +61,7 @@ const Register = () => {
     }
 
     return (
-        <div className='flex flex-col w-[98%] m-auto'>
+        <div id="register" className='flex flex-col w-[98%] m-auto'>
             <h1 className='font-bold text-[25px] md:text-[76px] text-center'>Register A Seat Today</h1>
             <p className='w-[90%] m-auto text-center font-semibold text-[20px] md:text-[26px] mb-6'>Excited to be a part of our upcoming tour? Take the first step and sign up today to guarantee your spot on the adventure!</p>
 
