@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
-import localFeast from '../assets/images/local-feast.png';
-import fufu from '../assets/images/asanka-fufu.jpeg';
-import Car from '../assets/images/car-tour.jpeg';
+import local from '../assets/images/local1.jpg';
+import street from '../assets/images/street1.jpg';
+import tour from '../assets/images/scenic-tour1.jpg';
 import Arrow from './Arrow';
 import tourFeast from '../assets/images/tour-feast.png';
 import Aos from 'aos';
@@ -29,7 +29,7 @@ const Highlists = () => {
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 mt-[50px] gap-4 gap-x-4 gap-y-6'>
 
-                <div data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" style={{ "--image-url": `url(${localFeast})` }} className='flex flex-col sm:col-span-2 lg:col-span-4 h-[300px] md:h-[400px] lg:h-[500px] rounded-3xl p-4 bg-cover bg-no-repeat justify-between bg-center bg-[image:var(--image-url)] bg-blend-overlay hover:bg-black hover:bg-opacity-35 transition duration-300 ease-in-out cursor-pointer'>
+                <div data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" style={{ "--image-url": `url(${local})` }} className='flex flex-col sm:col-span-2 lg:col-span-4 h-[300px] md:h-[400px] lg:h-[500px] rounded-3xl p-4 bg-cover bg-no-repeat justify-between bg-center bg-[image:var(--image-url)] bg-blend-overlay hover:bg-black hover:bg-opacity-35 transition duration-300 ease-in-out cursor-pointer'>
                     <div className='w-full flex justify-end'>
                         <Arrow />
                     </div>
@@ -42,7 +42,7 @@ const Highlists = () => {
                     </div>
                 </div>
 
-                <div data-aos-delay="50" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" style={{ "--image-url": `url(${Car})` }} className=' flex flex-col sm:col-span-1 lg:col-span-3 h-[300px] md:h-[400px] lg:h-[500px] rounded-3xl p-4 bg-cover bg-no-repeat justify-between bg-center bg-[image:var(--image-url)] bg-blend-overlay hover:bg-black hover:bg-opacity-35 bg-black bg-opacity-25 transition duration-300 ease-in-out cursor-pointer'>
+                <div data-aos-delay="50" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" style={{ "--image-url": `url(${tour})` }} className=' flex flex-col sm:col-span-1 lg:col-span-3 h-[300px] md:h-[400px] lg:h-[500px] rounded-3xl p-4 bg-cover bg-no-repeat justify-between bg-center bg-[image:var(--image-url)] bg-blend-overlay hover:bg-black hover:bg-opacity-35 bg-black bg-opacity-25 transition duration-300 ease-in-out cursor-pointer'>
                     <div className='w-full flex justify-end'>
                         <Arrow />
                     </div>
@@ -51,7 +51,7 @@ const Highlists = () => {
                     </div>
                 </div>
 
-                <div data-aos-delay="150" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" style={{ "--image-url": `url(${fufu})` }} className='flex flex-col sm:col-span-1 lg:col-span-3 h-[300px] md:h-[400px] lg:h-[500px] rounded-3xl p-4 bg-cover bg-no-repeat justify-between bg-center bg-[image:var(--image-url)] bg-blend-overlay hover:bg-black hover:bg-opacity-35 bg-black bg-opacity-25 transition duration-300 ease-in-out cursor-pointer'>
+                <div data-aos-delay="150" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" style={{ "--image-url": `url(${street})` }} className='flex flex-col sm:col-span-1 lg:col-span-3 h-[300px] md:h-[400px] lg:h-[500px] rounded-3xl p-4 bg-cover bg-no-repeat justify-between bg-center bg-[image:var(--image-url)] bg-blend-overlay hover:bg-black hover:bg-opacity-35 bg-black bg-opacity-25 transition duration-300 ease-in-out cursor-pointer'>
                     <div className='w-full flex justify-end'>
                         <Arrow />
                     </div>
