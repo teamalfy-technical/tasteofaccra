@@ -61,7 +61,7 @@ const Register = () => {
     }
 
     return (
-        <div className='flex flex-col w-[98%] m-auto'>
+        <div id="register" className='flex flex-col w-[98%] m-auto'>
             <h1 className='font-bold text-[25px] md:text-[76px] text-center'>Register A Seat Today</h1>
             <p className='w-[90%] m-auto text-center font-semibold text-[20px] md:text-[26px] mb-6'>Excited to be a part of our upcoming tour? Take the first step and sign up today to guarantee your spot on the adventure!</p>
 
@@ -138,9 +138,9 @@ const Register = () => {
 
                 <div className='w-full md:w-[50%] grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-y-8 md:gap-x-4'>
                     {registerCards.map((card, index) => (
-                        <div key={index} className='card-container flex flex-col rounded-3xl bg-white justify-center items-center p-4'>
+                        <div key={index} onClick={() => window.location.href = card.source} className='card-container flex flex-col rounded-3xl bg-white justify-center items-center p-4'>
                             <div className='rounded-full border-[10px] md:border-[14px] border-gray-300 p-2'>
-                                <img src={card.image} alt={card.title} className='w-[30px] h-[30px]' />
+                                <img src={card.image} alt={card.title} className='w-[30px] h-[30px]'/>
                             </div>
                             <h1 className='text-[18px] font-bold text-start mt-2'>{card.title}</h1>
                             <p className='w-full font-semibold text-center text-[16px] mt-2'>{card.description}</p>

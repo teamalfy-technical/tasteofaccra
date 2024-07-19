@@ -58,7 +58,7 @@ const Workwith = () => {
                                 key={index}
                                 className="card-container m-auto sm:w-[50%] lg:w-[25%] flex-shrink-0 flex flex-col items-center justify-between px-4"
                             >
-                                <img src={slide.image} alt={slide.title} className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] rounded-md border-white border-2" />
+                                <img src={slide.image} alt={slide.title} className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] bg-white rounded-md border-white border-2" />
                                 <div className="z-10 text-start mt-2">
                                     <h2 className="text-white text-[20px] sm:text-[24px] lg:text-[25px] font-bold">{slide.title}</h2>
                                     <p className="text-white text-[14px] sm:text-[16px] lg:text-[18px] font-bold">{slide.description}</p>

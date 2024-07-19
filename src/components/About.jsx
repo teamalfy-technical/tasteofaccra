@@ -52,7 +52,7 @@ const About = () => {
             <div className='flex flex-col justify-center w-full text-center'>
                 <h1 className='font-bold text-[32px] sm:text-[48px] md:text-[64px] lg:text-[78px]'>About The Event</h1>
                 <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50" data-aos-easing="ease-in-out" className='text-[20px] sm:text-[20px] md:text-[24px] m-auto font-semibold text-[#343434] text-center w-[90%] sm:w-[85%] md:w-[80%] lg:w-[78%] mb-5'>
-                    Embark on a one-of-a-kind culinary adventure with Taste of Accra. Delve into a diverse array of traditional delicacies, innovative fusion dishes, and rich culinary customs during our captivating tours. Immerse yourself in the intricate flavours, captivating narratives, and fascinating individuals that shape the vibrant food landscape of Accra. Join us and savour every moment of this unforgettable gastronomic experience.
+                    Embark on a one-of-a-kind culinary adventure with Taste Accra Tour. Delve into a diverse array of traditional delicacies, innovative fusion dishes, and rich culinary customs during our captivating tours. Immerse yourself in the intricate flavours, captivating narratives, and fascinating individuals that shape the vibrant food landscape of Accra. Join us and savour every moment of this unforgettable gastronomic experience.
                 </p>
                 <ButtonSet />
             </div>

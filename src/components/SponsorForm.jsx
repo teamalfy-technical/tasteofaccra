@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react';
 import { Button, Modal, TextInput } from "flowbite-react";
 import emailjs from 'emailjs-com';
 import config from '../dev/config.js';
+import 'react-phone-number-input/style.css';
+import PhoneInput from 'react-phone-number-input';
 
 const SponsorForm = ({ isOpen, setIsOpen }) => {
     const [showModal, setShowModal] = useState(false);
@@ -13,6 +15,7 @@ const SponsorForm = ({ isOpen, setIsOpen }) => {
         name: '',
         email: '',
         company: '',
+        number: '',
     });
 
     const handleChange = (field, value) => {
@@ -48,6 +51,7 @@ const SponsorForm = ({ isOpen, setIsOpen }) => {
             name: '',
             email: '',
             company: '',
+            number: '',
         });
         setButtonColor('bg-Green'); // Reset button color
     }
@@ -91,6 +95,17 @@ const SponsorForm = ({ isOpen, setIsOpen }) => {
                             required
                         />
                     </div>
+                    <PhoneInput
+                        defaultCountry="GH"
+                        placeholder='Phone Number'
+                        id="number"
+                        name="user_number"
+                        value={formData.number}
+                        onChange={(value) => handleChange('number', value)}
+                        required
+                        className='border-none'
+                    />
+
                     <div className="w-full flex justify-center">
                         <Button type="submit" className={`${buttonColor} hover:bg-pink-500`}>Sponsor</Button>
                     </div>
