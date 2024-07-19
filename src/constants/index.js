@@ -2,11 +2,18 @@ import vidaeLogo from '../assets/images/vidae-logo.png';
 import sunnyfmLogo from '../assets/images/sunnyfm-logo.png';
 import asankaLogo from '../assets/images/asanka.png';
 import aduanipaLogo from '../assets/images/aduanipa-logo.png';
-import tourex from '../assets/images/tour-bg.png';
-import bowling from '../assets/images/bowling.jpeg';
-import gallery from '../assets/images/gallery.jpeg';
-import mosleum from '../assets/images/mosleum.jpeg';
-import museum from '../assets/images/museum.jpeg';
+import elconciergelogo from '../assets/images/elconciergelogo.png';
+import foodgistLogo from '../assets/images/food-gist-logo.jpg';
+import roothotelLogo from '../assets/images/RootsHotel-Logo.png';
+import indomieLogo from '../assets/images/indomie.jpg';
+import local1 from '../assets/images/local1.jpg';
+import local2 from '../assets/images/local1.jpg';
+import local3 from '../assets/images/local1.jpg';
+import local4 from '../assets/images/local1.jpg';
+import castle from '../assets/images/castle.jpg';
+import lighthouse from '../assets/images/lighthouse.png';
+import mausoleum from '../assets/images/mausoleum.png';
+import square from '../assets/images/square.png';
 import whatsapp from '../assets/images/icons/whatsapp.svg';
 import telegram from '../assets/images/icons/telegram.svg';
 import phone from '../assets/images/icons/phone.svg';
@@ -52,32 +59,70 @@ const aboutLinks = [
 ];
 
 const workSlider = [
-  { id: 'vidae', image: vidaeLogo, title: 'Vidae Cafe', description: 'Vidaecaffe.com' },
+  // { id: 'vidae', image: vidaeLogo, title: 'Vidae Cafe', description: 'Vidaecaffe.com' },
+  { id: 'roothotel', image: roothotelLogo, title: 'Root Hotel', description: 'RootsHotel' },
   { id: 'sunnyfm', image: sunnyfmLogo, title: 'Sunny FM', description: 'Sunnygh.com' },
-  { id: 'asanka', image: asankaLogo, title: 'Asanka Local', description: 'Asankalocal.com' },
-  { id: 'aduanipa', image: aduanipaLogo, title: 'Aduanipa', description: '@Aduanipa' },
-  { id: 'tour', image: tourex, title: 'Tour Bus', description: '@TasteOfAccra' },
+  // { id: 'asanka', image: asankaLogo, title: 'Asanka Local', description: 'Asankalocal.com' },
+  // { id: 'aduanipa', image: aduanipaLogo, title: 'Aduanipa', description: '@Aduanipa' },
+  { id: 'foodgist', image: foodgistLogo, title: 'Food Gist', description: 'FoodGist' },
+  { id: 'vidae', image:  indomieLogo, title: 'Indomie Ghana', description: 'indomieghana.com' },
+  // { id: 'tour', image: elconciergelogo, title: 'El Concierge', description: '@elconcierge' },
 ];
+
+const highlightsCards = [
+  {
+    image1: castle,
+    image2: castle,
+    image3: castle,
+    image4: castle,
+    title: "Street Food Tasting",
+    description: "more text"
+  },
+  {
+    image1: castle,
+    image2: castle,
+    image3: castle,
+    image4: castle,
+    title: "Street Food Tasting",
+    description: "more text"
+  },
+  {
+    image1: local1,
+    image2: local2,
+    image3: local3,
+    image4: local4,
+    title: "Street Food Tasting",
+    description: "more text"
+  },
+  {
+    image1: castle,
+    image2: castle,
+    image3: castle,
+    image4: castle,
+    title: "Street Food Tasting",
+    description: "more text"
+  },
+]
 
 const tourCards = [
   {
-    image: mosleum,
+    image: castle,
+    title: 'Christianborg Castle',
+    description: 'Osu, Accra',
+  },
+  {
+    image: square,
+    title: 'Independence Square',
+    description: 'Osu, Road',
+  },
+  {
+    image: lighthouse,
+    title: 'Jamestown Lighthouse',
+    description: 'Jamestown, Accra',
+  },
+  {
+    image: mausoleum,
     title: 'Kwame Nkrumah Mausoleum',
-    description: 'Downtown, Accra',
-  },
-  {
-    image: gallery,
-    title: 'Artist Alliance Gallery',
-    description: 'Labadi Road',
-  },
-  {
-    image: bowling,
-    title: 'Bliss Family Entertainment',
-    description: 'Airport, Accra',
-  },
-  {
-    image: museum,
-    title: 'National Museum',
     description: 'Downtown, Accra',
   },
 ];
@@ -96,16 +141,16 @@ const registerCards = [
   {
     image: email,
     title: 'You can also contact us via email:',
-    description1: 'Tasteofaccra@gmail.com',
-    description2: 'Tasteofaccra@gmail.com',
-    description3: 'Tasteofaccra@gmail.com',
+    description1: 'hello@zuludesks.com',
+    // description2: 'Tasteofaccra@gmail.com',
+    // description3: 'Tasteofaccra@gmail.com',
   },
   {
     image: phone,
     title: 'You can also call us on:',
-    description1: '+233 2345 6789',
-    description2: '+233 2345 6789',
-    description3: '+233 2345 6789',
+    description1: '+233 53 047 1125',
+    // description2: '+233 2345 6789',
+    // description3: '+233 2345 6789',
   },
 ];
 
@@ -170,4 +215,4 @@ const utilities = [
   },      
 ]
 
-export {navLinks, aboutLinks, workSlider, tourCards, registerCards, initiativeData, footerLinks, utilities};
+export {navLinks, aboutLinks, workSlider, tourCards, registerCards, initiativeData, footerLinks, utilities, highlightsCards};

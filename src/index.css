@@ -88,6 +88,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;

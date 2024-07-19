@@ -49,7 +49,7 @@ const Workwith = () => {
             className="w-full h-auto flex flex-col bg-cover bg-no-repeat items-center justify-center bg-center bg-[image:var(--image-url)] py-20 mt-20">
             <div className='w-[90%] lg:w-[80%] m-auto rounded-3xl backdrop-blur border-gray-300 border-2 text-center mb-5 py-10'>
 
-                <h1 className='text-[32px] sm:text-[50px] lg:text-[76px] font-bold text-white'>Looking To Work With</h1>
+                <h1 className='text-[32px] sm:text-[50px] lg:text-[76px] font-bold text-white'>Partners</h1>
 
                 <div data-aos="fade-in" data-aos-duration="2000" data-aos-easing="ease-in-out" className="w-[90%] m-auto mt-8 sm:mt-[52px] lg:mt-[60px] justify-center">
                     <Slider {...sliderSettings} className='pl-[8%] m-auto'>

@@ -3,11 +3,9 @@ import logo from "../assets/images/taste-of-accra-logo.png";
 import close from "../assets/images/icons/close.svg";
 import menu from "../assets/images/icons/menu.svg";
 import { navLinks } from "../constants/index.js";
-
 const Navbar = () => {
   const [active, SetActive] = useState("");
   const [toggle, setToggle] = useState(false);
-
   return (
     <div className="w-full flex sticky top-0 z-20">
       <nav className=" px-[1%] w-full m-auto flex flex-wrap items-center justify-between font-manrope bg-white">
@@ -46,7 +44,6 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-
       <div className="hidden md:flex lg:gap-8 md:gap-6 items-center">
         <ul className="inline-flex gap-4 md:gap-6 w-auto">
           {navLinks.map((link) => (
@@ -62,9 +59,8 @@ const Navbar = () => {
           ))}
         </ul> 
       </div>
-
       <div className="hidden lg:flex ">
-          <button className="bg-[#CC5396] hover:bg-Green text-[16px] font-manrope text-white px-10 py-4">
+          <button href="#booking" className="bg-[#CC5396] hover:bg-Green text-[16px] font-manrope text-white px-10 py-4">
             Book your Seat
           </button>
         </div>
@@ -72,5 +68,4 @@ const Navbar = () => {
     </div>
   );
 };
-
 export default Navbar;
