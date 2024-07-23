@@ -11,7 +11,7 @@ const Initiative = () => {
         Aos.init();
       }, [])
     return (
-        <div className='flex flex-col mt-40'>
+        <div className='flex flex-col mt-40 pb-52 bg-white'>
             <h1 className='text-center font-bold text-[40px] md:text-[60px] lg:text-[76px]'>A Zuludesk Initiative</h1>
             <p className='text-[24px] md:text-[30px] lg:text-[30px] font-semibold text-center mt-2'>Why are we doing this?</p>
             <div className='w-[98%] m-auto h-auto lg:h-[600px] flex flex-col bg-[#1f2B22] rounded-3xl justify-center mt-[40px] lg:mt-[60px] mb-5 relative py-4'>

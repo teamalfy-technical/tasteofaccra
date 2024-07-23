@@ -10,7 +10,7 @@ const Footer = () => {
       }, [])
 
     return (
-        <div className='flex flex-col w-[98%] m-auto bg-[#1F2A22] rounded-3xl mt-24 lg:mt-52 p-6 md:p-10 text-white'>
+        <div className='flex flex-col w-[98%] m-auto bg-[#1F2A22] rounded-3xl p-6 md:p-10 text-white'>
             <div data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" className='flex flex-col justify-center text-center w-full md:w-[60%] lg:w-[35%] m-auto pb-10'>
                 <h1 className='text-[36px] md:text-[50px] font-semibold'>Ready for the Taste Accra Tour?</h1>
                 <p className='text-[18px] md:text-[22px] text-[#FFFFFF]'>Stay updated with the latest news, tips, and stories from Accra's food scene</p>

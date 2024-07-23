@@ -46,7 +46,7 @@ const Workwith = () => {
         <div
             id='sponsors'
             style={{ "--image-url": `url(${tour})` }}
-            className="w-full h-auto flex flex-col bg-cover bg-no-repeat items-center justify-center bg-center bg-[image:var(--image-url)] py-20 mt-20">
+            className="w-full h-auto flex flex-col bg-cover bg-no-repeat items-center justify-center bg-center bg-[image:var(--image-url)] py-20">
             <div className='w-[90%] lg:w-[80%] m-auto rounded-3xl backdrop-blur border-gray-300 border-2 text-center mb-5 py-10'>
 
                 <h1 className='text-[32px] sm:text-[50px] lg:text-[76px] font-bold text-white'>Partners</h1>
