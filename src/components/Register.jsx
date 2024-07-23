@@ -2,9 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { registerCards } from '../constants/index.js';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
-import emailjs from 'emailjs-com';
-import config from '../dev/config.js';
 import Aos from 'aos';
+import axios from 'axios';
 import 'aos/dist/aos.css';
 
 const Register = () => {
@@ -27,27 +26,31 @@ const Register = () => {
         setFormData((prevState) => ({ ...prevState, [field]: value }));
     };
 
-    const sendEmail = (e) => {
+    const sendCall = (e) => {
         e.preventDefault();
-        const { SERVICE_ID, TEMPLATE_ID2, PUBLIC_KEY } = config;
+        const endpoint = `https://0291-102-176-65-183.ngrok-free.app/api/v1/call/send-call`;
 
-        emailjs.sendForm(
-            SERVICE_ID,
-            TEMPLATE_ID2,
-            formRef.current,
-            PUBLIC_KEY
-        ).then(
-            () => {
+        axios.post(endpoint, {
+            name: formData.name,
+            email: formData.email,
+            phone_number: formData.number,
+        })
+            .then(response => {
+                if (response.status === 201) {
+                    setShowModal(true);
+                    setModalMessage('Thank you for registering. We will contact you shortly.');
+                    setButtonColor('bg-green-500');
+                } else {
+                    setShowModal(true);
+                    setModalMessage('The registration was successful, but something went wrong.');
+                    setButtonColor('bg-yellow-500');
+                }
+            })
+            .catch((error) => {
                 setShowModal(true);
-                setModalMessage('Email successfully sent!');
-                setButtonColor('bg-green-500'); // Set button color to green on success
-            },
-            (error) => {
-                setShowModal(true);
-                setModalMessage('Failed to send email. Please try again.');
-                setButtonColor('bg-red-500'); // Set button color to red on failure
-            },
-        );
+                setModalMessage('The registration failed. Please try again.');
+                setButtonColor('bg-red-500');
+            });
     };
 
     function onCloseModal() {
@@ -57,7 +60,7 @@ const Register = () => {
             email: '',
             number: '',
         });
-        setButtonColor('bg-Green'); // Reset button color
+        setButtonColor('bg-Green');
     }
 
     return (
@@ -69,7 +72,7 @@ const Register = () => {
                 <div className='w-full md:w-[50%]'>
                     <div className="w-full flex flex-col bg-white mx-auto py-8 px-24 border rounded-3xl">
                         <h1 className="text-[28px] font-bold mb-[24px]">Send In Your Name</h1>
-                        <form ref={formRef} onSubmit={sendEmail} className='flex flex-col gap-6 md:gap-12'>
+                        <form ref={formRef} onSubmit={sendCall} className='flex flex-col gap-6 md:gap-12'>
                             <div className="">
                                 <input
                                     placeholder='Full Name'
@@ -140,7 +143,7 @@ const Register = () => {
                     {registerCards.map((card, index) => (
                         <div key={index} onClick={() => window.location.href = card.source} className='card-container flex flex-col rounded-3xl bg-white justify-center items-center p-4'>
                             <div className='rounded-full border-[10px] md:border-[14px] border-gray-300 p-2'>
-                                <img src={card.image} alt={card.title} className='w-[30px] h-[30px]'/>
+                                <img src={card.image} alt={card.title} className='w-[30px] h-[30px]' />
                             </div>
                             <h1 className='text-[18px] font-bold text-start mt-2'>{card.title}</h1>
                             <p className='w-full font-semibold text-center text-[16px] mt-2'>{card.description}</p>
