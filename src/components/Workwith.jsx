@@ -19,7 +19,7 @@ const Workwith = () => {
         autoplaySpeed: 3000,
         speed: 500,
         centermode: true,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         className: 'tour-slides',
         beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),

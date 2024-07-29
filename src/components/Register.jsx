@@ -28,7 +28,7 @@ const Register = () => {
 
     const sendCall = (e) => {
         e.preventDefault();
-        const endpoint = `https://0291-102-176-65-183.ngrok-free.app/api/v1/call/send-call`;
+        const endpoint = `${process.env.VITE_APP_YOUR_BACKEND_URL}/api/v1/call/send-call`;
 
         axios.post(endpoint, {
             name: formData.name,
