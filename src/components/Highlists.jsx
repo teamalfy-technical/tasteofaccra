@@ -13,7 +13,7 @@ const Highlists = () => {
     }, [])
 
     return (
-        <div id='highlights' className='w-[98%] m-auto flex flex-col my-[20px]'>
+        <div id='highlights' className='w-[98%] m-auto flex flex-col my-[20px] bg-white'>
 
             <div className='mt-[20px] flex flex-col text-center md:text-left mb-2'>
                 <h1 className='font-bold text-[40px] md:text-[50px] lg:text-[60px] xl:text-[76px]'>Tour Highlights</h1>

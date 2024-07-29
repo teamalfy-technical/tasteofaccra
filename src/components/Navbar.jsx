@@ -6,6 +6,15 @@ import { navLinks } from "../constants/index.js";
 const Navbar = () => {
   const [active, SetActive] = useState("");
   const [toggle, setToggle] = useState(false);
+
+  const scrollToSection = (sectionId) => (event) => {
+    event.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="w-full flex sticky top-0 z-20">
       <nav className=" px-[1%] w-full m-auto flex flex-wrap items-center justify-between font-manrope bg-white">
@@ -33,15 +42,13 @@ const Navbar = () => {
                 <li
                   key={link.id}
                   className={`${active === link.title ? 'text-[#f9f9f9]' : 'text-black'
-                    } text-[16px] sm:text-[18px] cursor-pointer hover:underline hover-underline`}
-                  onClick={() => SetActive(link.title)}
+                    } text-[16px] sm:text-[18px] cursor-pointer hover:underline`}
+                  onClick={() => {
+                    SetActive(link.title);
+                    scrollToSection(link.id);
+                  }}
                 >
-                  <a onClick={() => {
-                    const sectionElement = document.getElementById(link.id);
-                    if (sectionElement) {
-                        sectionElement.scrollIntoView({ behavior: 'smooth' });
-                    }
-                }} href={`#${link.id}`}>{link.title}</a>
+                  <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
             </ul>

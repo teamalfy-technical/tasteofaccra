@@ -14,7 +14,7 @@ const ButtonSet = () => {
     return (
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" className='font-manrope inline-flex  sm:flex-row text-[14px] sm:text-[16px] gap-2  justify-center mt-[20px]'>
             <button
-                className='bg-white hover:bg-[#161616] hover:text-white border-black text-black py-2 lg:py-4 lg:px-10'
+                className='bg-white hover:bg-[#343A40] border-[#343A40] hover:text-white text-black py-2 lg:py-4 lg:px-10'
                 onClick={() => {
                     const registerElement = document.getElementById('register');
                     if (registerElement) {

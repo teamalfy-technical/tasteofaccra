@@ -8,6 +8,7 @@ import Register from '../components/Register';
 import Newsletter from '../components/Newsletter';
 import Initiative from '../components/Initiative';
 import Footer from '../components/Footer';
+import ScrollToTopButton from '../components/scrollTop';
 
 
 const LandingPage = () => {
@@ -22,6 +23,7 @@ const LandingPage = () => {
       <Newsletter/>
       <Initiative/>
       <Footer/>
+      <ScrollToTopButton/>
     </div>
   )
 }
