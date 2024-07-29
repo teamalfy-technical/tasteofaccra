@@ -28,7 +28,7 @@ const Register = () => {
 
     const sendCall = (e) => {
         e.preventDefault();
-        const endpoint = `${process.env.VITE_APP_YOUR_BACKEND_URL}/api/v1/call/send-call`;
+        const endpoint = `${import.meta.env.VITE_APP_YOUR_BACKEND_URL}/api/v1/call/send-call`;
 
         axios.post(endpoint, {
             name: formData.name,
