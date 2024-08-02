@@ -113,6 +113,7 @@ const registerCards = [
   {
     image: email,
     title: 'You can also contact us via email:',
+    source: 'mailto:hello@zuludesks.com',
     description1: 'hello@zuludesks.com',
     // description2: 'Tasteofaccra@gmail.com',
     // description3: 'Tasteofaccra@gmail.com',
@@ -120,6 +121,7 @@ const registerCards = [
   {
     image: phone,
     title: 'You can also call us on:',
+    source: 'tel:+233530471125',
     description1: '+233 53 047 1125',
     // description2: '+233 2345 6789',
     // description3: '+233 2345 6789',
