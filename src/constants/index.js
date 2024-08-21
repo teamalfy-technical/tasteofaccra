@@ -6,6 +6,11 @@ import elconciergelogo from '../assets/images/elconciergelogo.png';
 import foodgistLogo from '../assets/images/food-gist-logo.jpg';
 import roothotelLogo from '../assets/images/RootsHotel-Logo.png';
 import teamAlfyLogo from '../assets/images/teamAlfy.png';
+import zuludeskLogo from '../assets/images/zuludeskLogo.svg';
+import jamRockLogo from '../assets/images/jamrock-restaurant-and-grill-logo.webp';
+import meannanLogo from '../assets/images/meannan-foods-logo.webp';
+import nyonyoLogo from '../assets/images/nyonyo-logo.png';
+import mywekugardenLogo from '../assets/images/my-weku-gardens.png';
 import indomieLogo from '../assets/images/indomie.jpg';
 import local1 from '../assets/images/local1.jpg';
 import local2 from '../assets/images/local1.jpg';
@@ -63,12 +68,17 @@ const aboutLinks = [
 const workSlider = [
   // { id: 'vidae', image: vidaeLogo, title: 'Vidae Cafe', description: 'Vidaecaffe.com' },
   // { id: 'roothotel', image: roothotelLogo, title: 'Root Hotel Apartments', description: 'RootsHotel' },
-  // { id: 'roothotel', image: roothotelLogo, title: 'Root Hotel Apartments', description: 'RootsHotel' },
-  { id: 'sunnyfm', image: sunnyfmLogo, title: 'Sunny FM', description: 'Sunnygh.com' },
-  { id: 'teamAlfy', image: teamAlfyLogo, title: 'TeamAlfy', description: 'teamalfy.com' },
+  { id: 'teamAlfy', image: teamAlfyLogo, title: 'TeamAlfy', description: 'teamalfy.com', href: 'https://teamalfy.com'  },
+  { id: 'zuludesk', image: zuludeskLogo, title: 'Zuludesk', description: 'zuludesks.com', href: 'https://zuludesks.com'  },
+  { id: 'sunnyfm', image: sunnyfmLogo, title: 'Sunny FM', description: 'Sunnygh.com', href: 'https://sunnygh.com'  },
+  { id: 'jamrock', image: jamRockLogo, title: 'Jamrock', description: 'jamrock.com.gh', href: 'https://jamrock.com.gh'  },
+  { id: 'nyonyo', image: nyonyoLogo, title: 'Nyonyo', description: 'nyonyo.com', href: 'https://nyonyogh.com'  },
+  { id: 'meannan', image: meannanLogo, title: 'Meannan Foods', description: 'Meannan Foods' },
+  { id: 'mywekugarden', image: mywekugardenLogo, title: 'MyWekuGardens', description: 'mywekekugardens.com', href: 'https://mywekugardens.com/' },
+  // { id: 'asanka', image: asankaLogo, title: 'Asanka Local', description: 'Asankalocal.com' },
   // { id: 'asanka', image: asankaLogo, title: 'Asanka Local', description: 'Asankalocal.com' },
   // { id: 'aduanipa', image: aduanipaLogo, title: 'Aduanipa', description: '@Aduanipa' },
-  { id: 'foodgist', image: foodgistLogo, title: 'Food Gist', description: 'FoodGist' },
+  // { id: 'foodgist', image: foodgistLogo, title: 'Food Gist', description: 'FoodGist' },
   // { id: 'vidae', image:  indomieLogo, title: 'Indomie Ghana', description: 'indomieghana.com' },
   // { id: 'tour', image: elconciergelogo, title: 'El Concierge', description: '@elconcierge' },
 ];
@@ -114,6 +124,7 @@ const registerCards = [
     image: email,
     title: 'You can also contact us via email:',
     description1: 'hello@zuludesks.com',
+    source: 'mailto:hello@zuludesks.com',
     // description2: 'Tasteofaccra@gmail.com',
     // description3: 'Tasteofaccra@gmail.com',
   },
@@ -121,6 +132,7 @@ const registerCards = [
     image: phone,
     title: 'You can also call us on:',
     description1: '+233 53 047 1125',
+    source: 'tel:+233530471125',
     // description2: '+233 2345 6789',
     // description3: '+233 2345 6789',
   },
