@@ -6,17 +6,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "builds": "react-scripts build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
     "@react-buddy/ide-toolbox": "^2.4.0",
     "aos": "^2.3.4",
     "axios": "^1.7.2",
     "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
-    "express": "^4.19.2",
     "flowbite": "^2.4.1",
     "flowbite-react": "^0.10.1",
     "framer": "^2.4.1",
@@ -28,7 +27,6 @@
     "react-lottie": "^1.2.4",
     "react-phone-number-input": "^3.4.3",
     "react-router-dom": "^6.24.1",
-    "react-scripts": "^5.0.1",
     "react-slick": "^0.30.2",
     "react-spring": "^9.7.3",
     "slick-carousel": "^1.8.1",

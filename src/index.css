@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'dark-grotesque';
   src: url('/src/assets/fonts/DarkerGrotesque-Regular.woff') format('woff');
@@ -87,6 +91,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 @keyframes fadeInUp {
   0% {
@@ -238,6 +243,76 @@ button:focus-visible {
 
 .bg-scale:hover {
   background-size: 110%;
+}
+
+.button--mimas1 {
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: black;
+  background: #CC5396;
+  position: relative;
+}
+
+.button--mimas2 {
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: white;
+  background: #CC5396;
+  position: relative;
+}
+
+.button--mimas1, .button--mimas2 span {
+  position: relative;
+}
+
+.button--mimas1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: white;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  z-index: 0;
+}
+
+.button--mimas2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #4B8458;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  z-index: 0;
+}
+
+.button--mimas1:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.button--mimas1 span {
+  position: relative;
+  z-index: 1;
+}
+
+
+.button--mimas2:hover::before {
+	transform: translate3d(100%,0,0);
 }
 
 @media (prefers-color-scheme: light) {

@@ -2,13 +2,27 @@ import vidaeLogo from '../assets/images/vidae-logo.png';
 import sunnyfmLogo from '../assets/images/sunnyfm-logo.png';
 import asankaLogo from '../assets/images/asanka.png';
 import aduanipaLogo from '../assets/images/aduanipa-logo.png';
-import tourex from '../assets/images/tour-bg.png';
-import bowling from '../assets/images/bowling.jpeg';
-import gallery from '../assets/images/gallery.jpeg';
-import mosleum from '../assets/images/mosleum.jpeg';
-import museum from '../assets/images/museum.jpeg';
+import elconciergelogo from '../assets/images/elconciergelogo.png';
+import foodgistLogo from '../assets/images/food-gist-logo.jpg';
+import roothotelLogo from '../assets/images/RootsHotel-Logo.png';
+import teamAlfyLogo from '../assets/images/teamAlfy.png';
+import zuludeskLogo from '../assets/images/zuludeskLogo.svg';
+import jamRockLogo from '../assets/images/jamrock-restaurant-and-grill-logo.webp';
+import meannanLogo from '../assets/images/meannan-foods-logo.webp';
+import nyonyoLogo from '../assets/images/nyonyo-logo.png';
+import mywekugardenLogo from '../assets/images/my-weku-gardens.png';
+import indomieLogo from '../assets/images/indomie.jpg';
+import local1 from '../assets/images/local1.jpg';
+import local2 from '../assets/images/local1.jpg';
+import local3 from '../assets/images/local1.jpg';
+import local4 from '../assets/images/local1.jpg';
+import castle from '../assets/images/castle.jpg';
+import national from '../assets/images/national.jpg';
+import lighthouse from '../assets/images/lighthouse.png';
+import mausoleum from '../assets/images/statue.jpeg';
+import square from '../assets/images/square.png';
 import whatsapp from '../assets/images/icons/whatsapp.svg';
-import telegram from '../assets/images/icons/telegram.svg';
+import instagram from '../assets/images/icons/instagram.png';
 import phone from '../assets/images/icons/phone.svg';
 import email from '../assets/images/icons/email.svg';
 
@@ -52,60 +66,75 @@ const aboutLinks = [
 ];
 
 const workSlider = [
-  { id: 'vidae', image: vidaeLogo, title: 'Vidae Cafe', description: 'Vidaecaffe.com' },
-  { id: 'sunnyfm', image: sunnyfmLogo, title: 'Sunny FM', description: 'Sunnygh.com' },
-  { id: 'asanka', image: asankaLogo, title: 'Asanka Local', description: 'Asankalocal.com' },
-  { id: 'aduanipa', image: aduanipaLogo, title: 'Aduanipa', description: '@Aduanipa' },
-  { id: 'tour', image: tourex, title: 'Tour Bus', description: '@TasteOfAccra' },
+  // { id: 'vidae', image: vidaeLogo, title: 'Vidae Cafe', description: 'Vidaecaffe.com' },
+  // { id: 'roothotel', image: roothotelLogo, title: 'Root Hotel Apartments', description: 'RootsHotel' },
+  { id: 'teamAlfy', image: teamAlfyLogo, title: 'TeamAlfy', description: 'teamalfy.com', href: 'https://teamalfy.com'  },
+  { id: 'zuludesk', image: zuludeskLogo, title: 'Zuludesk', description: 'zuludesks.com', href: 'https://zuludesks.com'  },
+  { id: 'sunnyfm', image: sunnyfmLogo, title: 'Sunny FM', description: 'Sunnygh.com', href: 'https://sunnygh.com'  },
+  { id: 'jamrock', image: jamRockLogo, title: 'Jamrock', description: 'jamrock.com.gh', href: 'https://jamrock.com.gh'  },
+  { id: 'nyonyo', image: nyonyoLogo, title: 'Nyonyo', description: 'nyonyo.com', href: 'https://nyonyogh.com'  },
+  { id: 'meannan', image: meannanLogo, title: 'Meannan Foods', description: 'Meannan Foods' },
+  { id: 'mywekugarden', image: mywekugardenLogo, title: 'MyWekuGardens', description: 'mywekekugardens.com', href: 'https://mywekugardens.com/' },
+  // { id: 'asanka', image: asankaLogo, title: 'Asanka Local', description: 'Asankalocal.com' },
+  // { id: 'asanka', image: asankaLogo, title: 'Asanka Local', description: 'Asankalocal.com' },
+  // { id: 'aduanipa', image: aduanipaLogo, title: 'Aduanipa', description: '@Aduanipa' },
+  // { id: 'foodgist', image: foodgistLogo, title: 'Food Gist', description: 'FoodGist' },
+  // { id: 'vidae', image:  indomieLogo, title: 'Indomie Ghana', description: 'indomieghana.com' },
+  // { id: 'tour', image: elconciergelogo, title: 'El Concierge', description: '@elconcierge' },
 ];
+
 
 const tourCards = [
   {
-    image: mosleum,
+    image: castle,
+    title: 'Christianborg Castle',
+    description: 'Osu, Accra',
+  },
+  {
+    image: square,
+    title: 'Independence Square',
+    description: 'Osu, Road',
+  },
+  {
+    image: mausoleum,
     title: 'Kwame Nkrumah Mausoleum',
     description: 'Downtown, Accra',
   },
   {
-    image: gallery,
-    title: 'Artist Alliance Gallery',
-    description: 'Labadi Road',
-  },
-  {
-    image: bowling,
-    title: 'Bliss Family Entertainment',
-    description: 'Airport, Accra',
-  },
-  {
-    image: museum,
+    image: national,
     title: 'National Museum',
-    description: 'Downtown, Accra',
+    description: 'Osu, Accra',
   },
 ];
 
 const registerCards = [
   {
     image: whatsapp,
+    source: "https://wa.me/+233530471125",
     title: 'Join the taste of Accra on Whatsapp:',
     description: 'Join the taste of Accra on Whatsapp to get updates as its sent out',
   },
   {
-    image: telegram,
-    title: 'Join the family on Telegram:',
-    description: 'Join the taste of Accra on Telegram to get updates as its sent out',
+    image: instagram,
+    source: 'https://www.instagram.com/zuludesk_?igsh=MTFnMGIzdDFvMGt2dw==',
+    title: 'Join the family on Instagram:',
+    description: 'Join the taste of Accra on Instagram to get updates as its sent out',
   },
   {
     image: email,
     title: 'You can also contact us via email:',
-    description1: 'Tasteofaccra@gmail.com',
-    description2: 'Tasteofaccra@gmail.com',
-    description3: 'Tasteofaccra@gmail.com',
+    description1: 'hello@zuludesks.com',
+    source: 'mailto:hello@zuludesks.com',
+    // description2: 'Tasteofaccra@gmail.com',
+    // description3: 'Tasteofaccra@gmail.com',
   },
   {
     image: phone,
     title: 'You can also call us on:',
-    description1: '+233 2345 6789',
-    description2: '+233 2345 6789',
-    description3: '+233 2345 6789',
+    description1: '+233 53 047 1125',
+    source: 'tel:+233530471125',
+    // description2: '+233 2345 6789',
+    // description3: '+233 2345 6789',
   },
 ];
 

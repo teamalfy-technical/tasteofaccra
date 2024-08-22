@@ -74,7 +74,7 @@ const TourSlider = () => {
                         }`}
                     >
                         <div
-                            style={{ "--image-url": `url(${card.image})` }}
+                            style={{ "--image-url": `url(${card.image})`, backgroundPosition: 'top center' }}
                             className={`flex flex-col card-container w-[85%] m-auto bg-center rounded-3xl xl:h-[380px] h-[350px] justify-between mt-4 text-center pt-6 bg-cover bg-[image:var(--image-url)] ${
                                 index === currentSlide ? 'enlarged-card' : ''
                             }`}
