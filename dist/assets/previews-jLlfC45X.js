@@ -1,1 +1,0 @@
-import{j as e,P as r,C as t,a,V as n,b as s}from"./index-DB3BrA9X.js";import{r as o}from"./vendor-BvbJF06O.js";const i=()=>e.jsx(r,{children:e.jsx(t,{name:"App",children:e.jsx(a,{name:"Loader",children:e.jsx(n,{children:e.jsx(x,{})})})})});function x(){return e.jsx(o.Fragment,{children:"Loading..."})}const j=()=>e.jsx(s,{palette:e.jsx(i,{})});export{j as default};
