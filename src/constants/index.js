@@ -6,13 +6,13 @@ import elconciergelogo from '../assets/images/elconciergelogo.png';
 import foodgistLogo from '../assets/images/food-gist-logo.jpg';
 import roothotelLogo from '../assets/images/RootsHotel-Logo.png';
 import teamAlfyLogo from '../assets/images/teamAlfy.png';
-import zuludeskLogo from '../assets/images/zuludeskLogo.svg';
+import zuludeskLogo from '../assets/images/zuludesk-logo.png';
 import jamRockLogo from '../assets/images/jamrock-restaurant-and-grill-logo.webp';
 import meannanLogo from '../assets/images/meannan-foods-logo.webp';
 import nyonyoLogo from '../assets/images/nyonyo-logo.png';
 import mywekugardenLogo from '../assets/images/my-weku-gardens.png';
+import nervanaLogo from '../assets/images/nervana-logo.jpg';
 import indomieLogo from '../assets/images/indomie.jpg';
-import local1 from '../assets/images/local1.jpg';
 import local2 from '../assets/images/local1.jpg';
 import local3 from '../assets/images/local1.jpg';
 import local4 from '../assets/images/local1.jpg';
@@ -75,7 +75,7 @@ const workSlider = [
   { id: 'nyonyo', image: nyonyoLogo, title: 'Nyonyo', description: 'nyonyo.com', href: 'https://nyonyogh.com'  },
   { id: 'meannan', image: meannanLogo, title: 'Meannan Foods', description: 'Meannan Foods' },
   { id: 'mywekugarden', image: mywekugardenLogo, title: 'MyWekuGardens', description: 'mywekekugardens.com', href: 'https://mywekugardens.com/' },
-  // { id: 'asanka', image: asankaLogo, title: 'Asanka Local', description: 'Asankalocal.com' },
+  { id: 'nervana', image: nervanaLogo, title: 'Nervana', description: 'dadensen mu' },
   // { id: 'asanka', image: asankaLogo, title: 'Asanka Local', description: 'Asankalocal.com' },
   // { id: 'aduanipa', image: aduanipaLogo, title: 'Aduanipa', description: '@Aduanipa' },
   // { id: 'foodgist', image: foodgistLogo, title: 'Food Gist', description: 'FoodGist' },
