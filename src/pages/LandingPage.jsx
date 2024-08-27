@@ -4,6 +4,7 @@ import About from '../components/About';
 import Workwith from '../components/Workwith';
 import Highlists from '../components/Highlists';
 import Tour from '../components/Tour';
+import Partners from '../components/Partners.jsx';
 import Register from '../components/Register';
 import Newsletter from '../components/Newsletter';
 import Initiative from '../components/Initiative';
@@ -17,6 +18,7 @@ const LandingPage = () => {
       <Hero/>
       <About/>
       <Workwith/>
+      <Partners/>
       <Highlists/>
       <Tour/>
       <Register />
