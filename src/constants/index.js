@@ -86,7 +86,7 @@ const workSlider = [
   { id: 'kanzo', image: kanzoLogo, title: 'Kanzo', description: 'restaurant' },
   { id: 'meannan', image: meannanLogo, title: 'Meannan Foods', description: 'meannan foods' },
   { id: 'mywekugarden', image: mywekugardenLogo, title: 'MyWekuGardens', description: 'mywekekugardens.com', href: 'https://mywekugardens.com/' },
-  { id: 'sistasBowl', image: sistasBowlLogo, title: 'Sistas Bowl', description: 'sistas bowl' },
+  { id: 'sistasBowl', image: sistasBowlLogo, title: 'Glorious Caterers', description: 'a.k.a Sistas Bowl' },
   { id: 'nervana', image: nervanaLogo, title: 'Nervana', description: 'dadensen mu' },
   { id: 'ivyRose', image: ivyRoseLogo, title: 'Ivy Rose', description: 'ivy rose events' },
   // { id: 'asanka', image: asankaLogo, title: 'Asanka Local', description: 'Asankalocal.com' },

@@ -82,15 +82,15 @@ const PartnerSlider = () => {
                 <div className="flex flex-wrap items-start justify-center w-full p-6 py-0 space-x-4 bg-white shadow-lg py-auto lg:flex-nowrap rounded-3xl">
                     {/* Image Column */}
                     <div
-                    style={{ "--image-url": `url(${card.image})`, backgroundPosition: 'top center' }}
-                    className={`w-full lg:w-1/3 bg-center rounded-3xl xl:h-[380px] h-[350px] bg-cover bg-[image:var(--image-url)] ${
+                    style={{ "--image-url": `url(${card.image})` }}
+                    className={`w-full lg:w-1/3 rounded-3xl xl:h-[380px] h-[350px] md:h-96 bg-cover bg-[image:var(--image-url)] ${
                         index === currentSlide ? 'enlarged-card' : ''
                     }`}
                     ></div>
                 
                     {/* Content Column */}
-                    <div className="w-full my-auto lg:w-2/3 lg:pl-6 sm:py-4 md:pl-3">
-                        <h1 className="text-gray-900 text-start font-bold text-[24px] md:text-[30px] lg:text-[35px]">
+                    <div className="w-full my-auto pt-5 lg:w-2/3 lg:pl-6 sm:py-4 md:pl-3">
+                        <h1 className="text-gray-900 text-start lg:mt-12 font-bold text-[24px] md:text-[30px] lg:text-[35px]">
                             {card.title}
                         </h1>
                         <p className="mt-2 text-start text-gray-700 text-[16px] md:text-[18px] lg:text-[20px]">
