@@ -12,7 +12,7 @@ const Workwith = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const sliderSettings = {
-        dots: true,
+        dots: false,
         infinite: true,
         arrows: false,
         autoplay: true,
